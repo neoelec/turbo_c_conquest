@@ -69,7 +69,7 @@ void readdata(char *datafile, unsigned int *num)
 {
     unsigned int i;
 
-    stream = fopen(datafile, "rt");
+    stream = fopen(datafile, "r+");
 
     if (stream == NULL) {
         printerrmsg("Data file not found !");
