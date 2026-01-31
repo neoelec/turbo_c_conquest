@@ -26,7 +26,7 @@ int read_data(struct song ps[])
     int i;
     FILE *data;
 
-    if ((data = fopen("song.in", "rt")) == NULL) {
+    if ((data = fopen("song.in", "r+")) == NULL) {
         printf("File SONG. IN can't be read. Program aborted !");
         exit(EXIT_SUCCESS);
     }

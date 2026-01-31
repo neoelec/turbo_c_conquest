@@ -18,7 +18,7 @@ int main(void)
     } library;
     FILE *data, *binarydata;
 
-    if ((data = fopen("song.in", "rt")) == NULL) {
+    if ((data = fopen("song.in", "r+")) == NULL) {
         fprintf(stderr, "\nSONG.IN not found !\n");
         exit(EXIT_FAILURE);
     }

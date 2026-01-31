@@ -15,12 +15,12 @@ int main(int argc, char *argv[])
         exit(EXIT_FAILURE);
     }
 
-    if ((source = fopen(argv[1], "rt")) == NULL) {
+    if ((source = fopen(argv[1], "r+")) == NULL) {
         perror("Source");
         exit(EXIT_FAILURE);
     }
 
-    if ((destin = fopen(argv[2], "wt")) == NULL) {
+    if ((destin = fopen(argv[2], "w+")) == NULL) {
         perror("Destin");
         exit(EXIT_FAILURE);
     }

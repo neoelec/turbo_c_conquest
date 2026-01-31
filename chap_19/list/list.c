@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
         exit(EXIT_FAILURE);
     }
 
-    if ((stream = fopen(argv[1], "rt")) == NULL) {
+    if ((stream = fopen(argv[1], "r+")) == NULL) {
         puts("File not found !");
         exit(EXIT_FAILURE);
     }
